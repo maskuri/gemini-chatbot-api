@@ -2,26 +2,18 @@
 
 ## 📌 Objective
 
-Dokumentasi ini bertujuan untuk memandu pengguna dalam memahami dan mengimplementasikan Gemini AI dari awal. Panduan ini mencakup pengenalan Gemini API, konfigurasi model, penggunaan berbagai jenis input (teks, audio, dokumen, gambar), serta penggunaan File API.
+Understand how to integrate Gemini AI Models to power chatbot responses 
 
 ---
 
-## 📘 Table of Contents
+## 📘 Workflow
 
-- [Introduction to the Gemini API](#introduction-to-the-gemini-api)
-- [How to Use the Gemini API and Initialize a Model](#how-to-use-the-gemini-api-and-initialize-a-model)
-- [Types of Parameters in Gemini Configuration](#types-of-parameters-in-gemini-configuration)
-- [How to Configure Parameters in Gemini](#how-to-configure-parameters-in-gemini)
-- [Generating Text Output from Various Inputs](#generating-text-output-from-various-inputs)
-- [Using the File API](#using-the-file-api)
-
----
-
-## 🧠 Introduction to the Gemini API
-
-Gemini adalah API dari Google DeepMind yang memungkinkan pengembangan aplikasi berbasis AI multimodal. API ini mendukung pemrosesan teks, audio, gambar, dan dokumen untuk menghasilkan output cerdas berbasis model besar.
+Workflow Understand 
+- how to integrate Gemini AI models to power chatbot responsesIn our hands-on project,
+- we implemented this flow using a Vanilla JavaScript frontend and a Node.js + Express backend. When the user submits a message through the chat form, the frontend sends a POST request to the /api/chat endpoint on the backend.
+- The backend then uses the Gemini SDK’s generateContent() method to prompt the AI model with the user’s message.
+-  Once Gemini returns the response, it’s sent back to the frontend and displayed in the chat interface.This architecture allows us to keep the AI logic on the backend—ensuring security and scalability—while delivering a seamless conversational experience to the user.
 
 ---
 
-## ⚙️ How to Use the Gemini API and Initialize a Model
 
