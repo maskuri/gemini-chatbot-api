@@ -25,7 +25,3 @@ Gemini adalah API dari Google DeepMind yang memungkinkan pengembangan aplikasi b
 
 ## ⚙️ How to Use the Gemini API and Initialize a Model
 
-### 1. Instalasi Library
-
-```bash
-pip install google-generativeai
